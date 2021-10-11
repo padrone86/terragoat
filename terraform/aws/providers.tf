@@ -14,5 +14,9 @@ provider "aws" {
 terraform {
   backend "s3" {
     encrypt = true
+    bucket  = "terragoat-test"
+    key     = "terragoat-test"
+    region  = "ap-northeast-1"
+    profile = "devaoki"
   }
 }
